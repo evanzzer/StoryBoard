@@ -1,0 +1,60 @@
+<resources>
+    <string name="appName" translatable="false">StoryBoard</string>
+    <string name="appDirectory" translatable="false">com.leafy.storyboard</string>
+    <string name="tokenKey" translatable="false">oauth</string>
+    <string name="emailKey" translatable="false">username</string>
+
+    <string name="shortPlaceholder" translatable="false">short_text</string>
+    <string name="mediumPlaceholder" translatable="false">medium_placeholder</string>
+
+    <string name="name">Name</string>
+    <string name="email">email</string>
+    <string name="password">Password</string>
+    <string name="login">Log in</string>
+    <string name="logout">Log out</string>
+    <string name="register">Register</string>
+    <string name="addStory">Add Story</string>
+
+    <string name="createdAt">Posted on %1$s</string>
+
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="description">Image Description</string>
+    <string name="post">Post Story</string>
+    <string name="refresh">Refresh</string>
+    <string name="image">Image</string>
+
+    <!-- Misc Message -->
+    <string name="registerMsg">Don\'t have an account? <b>Register Now!</b></string>
+    <string name="loginMsg">Already have an account? <b>Sign in Now!</b></string>
+    <string name="emptyMsg">This part should be filled!</string>
+    <string name="emailErrorMsg">Invalid email!</string>
+    <string name="passwordErrorMsg">Password should have at least 6 characters!</string>
+    <string name="emailAlreadyExistMsg">Email already existed!</string>
+    <string name="emailNotExistMsg">Email does not exist!</string>
+    <string name="invalidPasswordMsg">Incorrect password!</string>
+    <string name="connectionErrorMsg">
+        Can\'t communicate with the server.
+        Please check your connection and try again!
+    </string>
+    <string name="chooseImageMsg">Choose an image</string>
+
+    <string name="emptyText">No Storyboard Available, Create One Now!</string>
+    <string name="errorText">An unknown error has occurred!</string>
+
+    <!-- Toast Message -->
+    <string name="successRegisterMsg">Account has been registered!</string>
+    <string name="imageEmptyMsg">Image should not be left empty!</string>
+    <string name="successPostMsg">Your story has been posted!</string>
+    <string name="locationNotFoundMsg">Location is not found. Please try again.</string>
+
+    <!-- Alert Dialog -->
+    <string name="errorTitle">Error</string>
+    <string name="alertTitle">Alert</string>
+    <string name="logoutMsg">Are you sure to log out from this account?</string>
+    <string name="cameraPermissionMsg">You need to grant camera permission in order to post a new story!</string>
+    <string name="locationPermissionMsg">You need to grant location permission in order to post a new story!</string>
+    <string name="alertYes">Yes</string>
+    <string name="alertNo">No</string>
+    <string name="map">Map</string>
+</resources>

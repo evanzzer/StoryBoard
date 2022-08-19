@@ -1,0 +1,51 @@
+<resources>
+    <string name="name">Nama</string>
+    <string name="email">email</string>
+    <string name="password">Kata Sandi</string>
+    <string name="login">Masuk</string>
+    <string name="logout">Keluar</string>
+    <string name="register">Registrasi</string>
+    <string name="addStory">Post Baru</string>
+
+    <string name="createdAt">Diterbitkan pada %1$s</string>
+
+    <string name="camera">Kamera</string>
+    <string name="gallery">Album</string>
+    <string name="description">Deskripsi Gambar</string>
+    <string name="post">Publikasikan</string>
+    <string name="refresh">Refresh</string>
+    <string name="image">Gambar</string>
+
+    <!-- Misc Message -->
+    <string name="registerMsg">Tidak punya akun? <b>Daftar Sekarang!</b></string>
+    <string name="loginMsg">Sudah punya akun? <b>Masuk Sekarang!</b></string>
+    <string name="emptyMsg">Bagian ini wajib diisi!</string>
+    <string name="emailErrorMsg">Email tidak valid!</string>
+    <string name="passwordErrorMsg">Kata sandi harus terdiri dari minimal 6 huruf!</string>
+    <string name="emailAlreadyExistMsg">Email ini sudah terdaftar!</string>
+    <string name="emailNotExistMsg">Email tidak dapat ditemukan!</string>
+    <string name="invalidPasswordMsg">Kata sandi z!</string>
+    <string name="connectionErrorMsg">
+        Tidak dapat menghubungi server.
+        Silahkan periksa koneksi internet dan coba kembali!
+    </string>
+    <string name="chooseImageMsg">Pilih Gambar</string>
+
+    <string name="emptyText">Tidak ada post terbaru. Ayo buat sekarang!</string>
+    <string name="errorText">Sebuah kesalahan telah terjadi!</string>
+
+    <!-- Toast Message -->
+    <string name="successRegisterMsg">Akun sudah teregistrasi!</string>
+    <string name="imageEmptyMsg">Gambar tidak boleh kosong!</string>
+    <string name="successPostMsg">Berhasil dipublikasikan!</string>
+    <string name="locationNotFoundMsg">Lokasi tidak ditemukan. Silakan mencoba kembali.</string>
+
+    <!-- Alert Dialog -->
+    <string name="errorTitle">Error</string>
+    <string name="alertTitle">Perhatikan</string>
+    <string name="logoutMsg">Apakah Anda ingin keluar dari akun Anda?</string>
+    <string name="cameraPermissionMsg">Anda butuh memperbolehkan aplikasi mengakses kamera agar dapat membuat sebuah post baru!</string>
+    <string name="locationPermissionMsg">Anda butuh memperbolehkan aplikasi mengakses lokasi agar dapat membuat sebuah post baru!</string>
+    <string name="alertYes">Ya</string>
+    <string name="alertNo">Tidak</string>
+</resources>

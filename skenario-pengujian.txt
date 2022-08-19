@@ -1,0 +1,96 @@
+AndroidTest
+· StoryRemoteMediatorTest
+  > Ketika data selanjutnya ada
+    - Memastikan fungsi load mengembalikan MediatorResult.Success
+    - Memastikan bahwa pagination belum sampai ke akhir dari data dengan
+      menunjukkan endOfPaginationReached bernilai False
+
+· DataRepositoryTest
+  > Ujicoba fungsi postRegister
+    - Memastikan data tidak null
+    - Memastikan hasil akhir dari Flow merupakan Status.Success
+    - Memastikan data yang dikeluarkan sesuai dengan yang diharapkan
+  > Ujicoba fungsi postLogin
+    - Memastikan data tidak null
+    - Memastikan hasil akhir dari Flow merupakan Status.Success
+    - Memastikan hasil akhir dari Flow memuat data dengan tipe data Login
+    - Memastikan data yang dikeluarkan sesuai dengan yang diharapkan
+  > Ujicoba fungsi postNewStory
+    - Memastikan data tidak null
+    - Memastikan hasil akhir dari Flow merupakan Status.Success
+    - Memastikan data yang dikeluarkan sesuai dengan yang diharapkan
+  > Ujicoba fungsi getStoryList
+    - Memastikan data tidak null
+  > Ujicoba fungsi getStoryWithLocation
+    - Memastikan data tidak null
+    - Memastikan hasil akhir dari Flow merupakan Status.Success
+    - Memastikan hasil akhir dari Flow memuat data dengan tipe data List<Story>
+    - Memastikan data yang dikeluarkan sesuai dengan yang diharapkan
+
+Unit Test
+· LoginViewModelTest
+  > Ketika berhasil mendapatkan data
+    - Memastikan bahwa dataUseCase.postLogin() dipanggil
+    - Memastikan data tidak null
+    - Memastikan data yang dikeluarkan sesuai dengan harapan.
+  > Ketika terdapat Error pada data
+    - Memastikan bahwa dataUseCase.postLogin() dipanggil
+    - Memastikan data tidak null
+    - Memastikan data yang dikeluarkan merupakan Status.Error.
+  > Ketika sedang memuat data
+    - Memastikan bahwa dataUseCase.postLogin() dipanggil
+    - Memastikan data tidak null
+    - Memastikan data yang dikeluarkan merupakan Status.Loading
+
+· NewStoryViewModelTest
+  > Ketika berhasil mendapatkan data
+    - Memastikan bahwa dataUseCase.postNewStory() dipanggil
+    - Memastikan data tidak null
+    - Memastikan data yang dikeluarkan sesuai dengan harapan.
+  > Ketika terdapat Error pada data
+    - Memastikan bahwa dataUseCase.postNewStory() dipanggil
+    - Memastikan data tidak null
+    - Memastikan data yang dikeluarkan merupakan Status.Error.
+  > Ketika sedang memuat data
+    - Memastikan bahwa dataUseCase.postNewStory() dipanggil
+    - Memastikan data tidak null
+    - Memastikan data yang dikeluarkan merupakan Status.Loading
+
+· MapsViewModelTest
+  > Ketika berhasil mendapatkan data
+    - Memastikan bahwa dataUseCase.getStoryWithLocation(token) dipanggil
+    - Memastikan data tidak null
+    - Memastikan data yang dikeluarkan sesuai dengan harapan.
+  > Ketika terdapat Error pada data
+    - Memastikan bahwa dataUseCase.getStoryWithLocation(token) dipanggil
+    - Memastikan data tidak null
+    - Memastikan data yang dikeluarkan merupakan Status.Error.
+  > Ketika memgembalikan data kosong
+    - Memastikan bahwa dataUseCase.getStoryWithLocation(token) dipanggil
+    - Memastikan data tidak null
+    - Memastikan data yang dikeluarkan merupakan Status.Empty.
+  > Ketika sedang memuat data
+    - Memastikan bahwa dataUseCase.getStoryWithLocation(token) dipanggil
+    - Memastikan data tidak null
+    - Memastikan data yang dikeluarkan merupakan Status.Loading
+
+· MainViewModelTest
+  > Ketika berhasil memuatkan data
+    - Memastikan bahwa dataUseCase.getStoryList(token) dipanggil
+    - Memastikan data tidak null
+    - Memastikan jumlah data sesuai dengan yang diharapkan
+
+· RegisterViewModelTest
+  > Ketika berhasil mendapatkan data
+    - Memastikan bahwa dataUseCase.postRegister() dipanggil
+    - Memastikan data tidak null
+    - Memastikan data yang dikeluarkan sesuai dengan harapan.
+  > Ketika terdapat Error pada data
+    - Memastikan bahwa dataUseCase.postRegister() dipanggil
+    - Memastikan data tidak null
+    - Memastikan data yang dikeluarkan merupakan Status.Error.
+  > Ketika sedang memuat data
+    - Memastikan bahwa dataUseCase.postRegister() dipanggil
+    - Memastikan data tidak null
+    - Memastikan data yang dikeluarkan merupakan Status.Loading
+

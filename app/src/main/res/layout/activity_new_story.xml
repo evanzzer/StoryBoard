@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.login.LoginActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8sp">
+
+            <ImageView
+                android:id="@+id/imgStory"
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:background="@color/shimmer_color"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintDimensionRatio="16:9"
+                android:contentDescription="@string/image" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCamera"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_margin="12sp"
+                android:text="@string/camera"
+                app:icon="@drawable/ic_baseline_photo_camera_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btnGallery"
+                app:layout_constraintTop_toBottomOf="@id/imgStory" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnGallery"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_margin="12sp"
+                android:text="@string/gallery"
+                app:icon="@drawable/ic_baseline_image_24"
+                app:layout_constraintStart_toEndOf="@id/btnCamera"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgStory"
+                app:layout_constraintHorizontal_bias="0"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutDescription"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp"
+                android:hint="@string/description"
+                app:errorEnabled="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnCamera" >
+                <com.leafy.storyboard.utils.CustomEditText
+                    android:id="@+id/etDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="top"
+                    android:imeOptions="actionDone"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12sp"
+                android:text="@string/post"
+                app:icon="@drawable/ic_baseline_add_comment_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layoutDescription"
+                app:layout_constraintHorizontal_bias="0"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?attr/progressBarStyle"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12sp"
+                android:indeterminateTint="?attr/colorPrimary"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/btnPost"
+                app:layout_constraintEnd_toStartOf="@id/btnPost"
+                app:layout_constraintTop_toTopOf="@id/btnPost" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

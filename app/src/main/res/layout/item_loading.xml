@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:shimmer_auto_start="true">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4sp"
+                android:layout_marginEnd="4sp"
+                android:orientation="vertical">
+                <include layout="@layout/item_story_placeholder" />
+                <include layout="@layout/item_story_placeholder" />
+                <include layout="@layout/item_story_placeholder" />
+                <include layout="@layout/item_story_placeholder" />
+                <include layout="@layout/item_story_placeholder" />
+            </LinearLayout>
+        </ScrollView>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <include layout="@layout/view_error"
+        android:id="@+id/layoutError"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
